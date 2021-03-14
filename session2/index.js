@@ -172,7 +172,31 @@ function ex9(){
         }
     }
 }
-//ex9()
+ex9()
+function ex10(){
+    console.log('Excercise 10 :')
+    let kg = Number(prompt('Your weight in kg ?'))
+    let cm = Number(prompt('Your height in cm ?'))
+    let m = Math.round(cm/100)
+    let bmi = kg/(m*m)
+    if(bmi < 16){
+        alert(`Your BMI is ${bmi}`)
+        alert('You are Severely underweight')
+    }else if(bmi < 18.5){
+        alert(`Your BMI is ${bmi}`)
+        alert('You are underweight')
+    }else if(bmi < 25){
+        alert(`Your BMI is ${bmi}`)
+        alert('You are normal')
+    }else if(bmi <30){
+        alert(`Your BMI is ${bmi}`)
+        alert('You are overweight')
+    }else {
+        alert(`Your BMI is ${bmi}`)
+        alert('You are obese ')
+    }
+}
+//ex10()
 
 
 
