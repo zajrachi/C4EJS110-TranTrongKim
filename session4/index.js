@@ -87,22 +87,113 @@ function ex4(){
         year : 2012 ,
         rate : 8.4
     }
-    let a = String(prompt('What do youu want to update?'))
+    let a = prompt('What do you want to update?')
     if(a=='title'){
         let b = prompt('What is the update?')
         movie.title = b
-        console.log(movie)
     }else if(a=='year'){
         let b = prompt('What is the update?')
         movie.year = b
     }else if(a=='rate'){
         let b = prompt('What is the update?')
         movie.rate = b
-    }else {
+    }else  {
         alert(`${a} does not exist in our data, we will add new`)
-        
-        //movie['a'] = prompt('Enter the new data :')
+        let newData = prompt('Enter the new data :')
+        movie[a] = newData
     }
     console.log(movie)
 }
-ex4()
+// ex4()
+function ex5(){
+    let movies = [
+        { 
+            title: 'End Game',
+            year: 2020,
+            rate: 7.0  
+        },
+        { 
+            title: 'Iron man',
+            year: 2020,
+            rate: 7.0  
+        },
+        { 
+            title: 'Spider man',
+            year: 2020,
+            rate: 7.0  
+        }
+    ]
+
+    console.log(movies[0])
+
+    console.log('*************************')
+    console.log(movies.slice(-1).pop())
+
+    console.log('*************************')
+    for(let i = 0; i < movies.length; i++){
+        console.log(movies[i])
+    }
+
+    console.log('*************************')
+    for(let i = 0; i < movies.length; i++){
+        console.log('------------------------')
+        console.log(movies[i].title)
+        console.log(`Year : ${movies[i].year}`)
+        console.log(`Rate: ${movies[i].rate}`)
+        
+    }
+
+    console.log('*************************')
+    let a = movies.slice(-1).pop()
+    a.rate = a.rate + 0.7
+    console.log(a)
+}    
+// ex5()
+
+function ex6() {
+    let movie = {
+        title: 'Attack on titans',
+        year: 2013,
+        rate: 8.8,
+        casts: 'Eren Armin Mikasa' 
+    }
+    console.log(movie.title)
+    console.log(`Year: ${movie.year}`)
+    console.log(`Rate: ${movie.rate}`)
+    console.log(`Casts: ${movie.casts}`)
+    console.log('*************************')
+    movie.casts = movie.casts + ' Eren'
+    console.log(movie)
+}
+// ex6()
+
+function ex7() {
+    let arrMovie = [
+        {
+            title:'End game' ,
+            year: 2000,
+            rate:8.0,
+            casts:'kim dat trong' 
+        },
+        {
+            title:'Reply' ,
+            year: 2000,
+            rate:8.0,
+            casts:'kim dat trong' 
+        },
+        {
+            title:'Iron man' ,
+            year: 2000,
+            rate: 8.0,
+            casts:'kim dat trong' 
+        }
+    ]
+    for (let i = 0; i < arrMovie.length; i++) {
+        console.log('------------------------')
+        console.log(arrMovie[i].title)
+        console.log(`Year : ${arrMovie[i].year}`)
+        console.log(`Rate: ${arrMovie[i].rate}`)
+        console.log(`Casts: ${arrMovie[i].casts}`)
+    }
+}
+// ex7()
