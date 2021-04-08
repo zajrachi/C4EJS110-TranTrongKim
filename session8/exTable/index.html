@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#u0").click(function(){
+                $("#btn-add").hide()
+                $("#btn-update").show()
+            })
+            $("#btn-update").click(function(){
+                $("#btn-update").hide()
+                $("#btn-add").show()
+            })
+        })
+    </script>
+</head>
+<body>
+    <form id="form-input">
+        <input id="project" type="text" placeholder="enter project"/>
+        <input id="task" type="text" placeholder="enter task"/>
+        <input id="time" type="text" placeholder="enter time spent"/>
+    </form>
+    
+    <button id="btn-add" onclick="add()">Add</button>
+    <table>
+        <thead id="head-table">
+            <th >project</th>
+            <th >task</th>
+            <th >time spent</th>
+        </thead>
+        <tbody id="body-table">
+            <tr id="tr-0">
+                <td >Project test 1</td>
+                <td >Task test 1</td>
+                <td >0</td>
+            </tr>
+        </tbody>
+    </table>
+    <script src="index.js"></script>
+</body>
+</html>

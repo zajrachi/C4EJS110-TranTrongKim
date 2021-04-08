@@ -20,7 +20,7 @@ function ex2(){
 
 function ex3(){
     console.log('3.1 : NO')
-    console.log('3.1 : YES')
+    console.log('3.1 : NO')
 }
 // ex3()
 
